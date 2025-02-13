@@ -1,0 +1,17 @@
+/Users/omaradriano/Dev/csharp/roadmapsh/blogapi/Contracts/bin/Debug/net8.0/Contracts.deps.json
+/Users/omaradriano/Dev/csharp/roadmapsh/blogapi/Contracts/bin/Debug/net8.0/Contracts.dll
+/Users/omaradriano/Dev/csharp/roadmapsh/blogapi/Contracts/bin/Debug/net8.0/Contracts.pdb
+/Users/omaradriano/Dev/csharp/roadmapsh/blogapi/Contracts/bin/Debug/net8.0/Application.dll
+/Users/omaradriano/Dev/csharp/roadmapsh/blogapi/Contracts/bin/Debug/net8.0/Domain.dll
+/Users/omaradriano/Dev/csharp/roadmapsh/blogapi/Contracts/bin/Debug/net8.0/Application.pdb
+/Users/omaradriano/Dev/csharp/roadmapsh/blogapi/Contracts/bin/Debug/net8.0/Domain.pdb
+/Users/omaradriano/Dev/csharp/roadmapsh/blogapi/Contracts/obj/Debug/net8.0/Contracts.csproj.AssemblyReference.cache
+/Users/omaradriano/Dev/csharp/roadmapsh/blogapi/Contracts/obj/Debug/net8.0/Contracts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/omaradriano/Dev/csharp/roadmapsh/blogapi/Contracts/obj/Debug/net8.0/Contracts.AssemblyInfoInputs.cache
+/Users/omaradriano/Dev/csharp/roadmapsh/blogapi/Contracts/obj/Debug/net8.0/Contracts.AssemblyInfo.cs
+/Users/omaradriano/Dev/csharp/roadmapsh/blogapi/Contracts/obj/Debug/net8.0/Contracts.csproj.CoreCompileInputs.cache
+/Users/omaradriano/Dev/csharp/roadmapsh/blogapi/Contracts/obj/Debug/net8.0/Contracts.csproj.Up2Date
+/Users/omaradriano/Dev/csharp/roadmapsh/blogapi/Contracts/obj/Debug/net8.0/Contracts.dll
+/Users/omaradriano/Dev/csharp/roadmapsh/blogapi/Contracts/obj/Debug/net8.0/refint/Contracts.dll
+/Users/omaradriano/Dev/csharp/roadmapsh/blogapi/Contracts/obj/Debug/net8.0/Contracts.pdb
+/Users/omaradriano/Dev/csharp/roadmapsh/blogapi/Contracts/obj/Debug/net8.0/ref/Contracts.dll

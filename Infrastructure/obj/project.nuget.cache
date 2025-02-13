@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "L9/XPsbH2sk=",
+  "success": true,
+  "projectFilePath": "/Users/omaradriano/Dev/csharp/roadmapsh/blogapi/Infrastructure/Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "/Users/omaradriano/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.2/microsoft.extensions.dependencyinjection.abstractions.9.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
