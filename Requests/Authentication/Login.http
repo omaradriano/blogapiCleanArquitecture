@@ -1,0 +1,19 @@
+@blog_HostAddress = http://localhost:5103
+
+POST {{blog_HostAddress}}/auth/login
+Content-Type: application/json
+
+{
+    "email": "oadrian38@gmail.com",
+    "password": "123456"
+}
+
+
+POST {{blog_HostAddress}}/auth/register
+Content-Type: application/json
+
+{
+    "email": "oadrian38@gmail.com",
+    "password": "123456",
+    "username": "oadrian38"
+}

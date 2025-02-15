@@ -9,3 +9,4 @@
 /Users/omaradriano/Dev/csharp/roadmapsh/blogapi/Domain/obj/Debug/net8.0/refint/Domain.dll
 /Users/omaradriano/Dev/csharp/roadmapsh/blogapi/Domain/obj/Debug/net8.0/Domain.pdb
 /Users/omaradriano/Dev/csharp/roadmapsh/blogapi/Domain/obj/Debug/net8.0/ref/Domain.dll
+/Users/omaradriano/Dev/csharp/roadmapsh/blogapi/Domain/obj/Debug/net8.0/Domain.sourcelink.json
