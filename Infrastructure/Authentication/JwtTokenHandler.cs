@@ -21,9 +21,8 @@ public class JwtTokenHandler(IDateTimeProvider dateTimeProvider, IOptions<JwtSet
         {
             new Claim(JwtRegisteredClaimNames.Email, email),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()), //JSON ID preventing to be replayed
-            new Claim(JwtRegisteredClaimNames.Exp, new DateTimeOffset(DateTime.UtcNow.AddSeconds(30)).ToUnixTimeSeconds().ToString(), ClaimValueTypes.Integer64),
+            new Claim(JwtRegisteredClaimNames.Exp, _dateTimeProvider.GetExpireUnixTime(), ClaimValueTypes.Integer64),
             new Claim(JwtRegisteredClaimNames.Iat, _dateTimeProvider.GetActualUnixTime(), ClaimValueTypes.Integer64),
-            // new Claim(ClaimTypes.Name, "omaradrianojuasjuas"),
         };
 
         //2. Create a symmetric key
@@ -37,7 +36,6 @@ public class JwtTokenHandler(IDateTimeProvider dateTimeProvider, IOptions<JwtSet
             issuer: _jwtSettings.Issuer,
             audience: _jwtSettings.Audience,
             claims: claims,
-            // expires: _dateTimeProvider.UtcNow.AddMinutes(_jwtSettings.ExpireMinutes),
             signingCredentials: creds);
 
         //5. Return the token

@@ -6,6 +6,6 @@ namespace Application.Common.Interfaces.Services
 
         string GetActualUnixTime();
 
-        string GetExpireUnixTime(int minutes);
+        string GetExpireUnixTime();
     }
 }

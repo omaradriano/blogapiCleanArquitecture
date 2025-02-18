@@ -28,7 +28,7 @@ var builder = WebApplication.CreateBuilder(args);
             {
                 ValidateIssuer = true, //solo acepta tokens emitidos por el servidor
                 ValidateAudience = true, //Acepta tokens dirigidos al cliente
-                ValidateLifetime = true, //Rechaza tokens expirados
+                ValidateLifetime = true,
                 ValidateIssuerSigningKey = true, //Rechaza tokens con firma invalida
                 ClockSkew = TimeSpan.Zero, //Asegura que el token no es valido antes de su fecha de emision (tiempo exacto)
                 ValidIssuer = configValues["Issuer"],
@@ -42,7 +42,7 @@ var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 {
     app.UseHttpsRedirection();
-    app.UseAuthentication();
+    app.UseAuthentication(); //Authentication comes before authorization
     app.UseAuthorization();
     app.MapControllers();
     app.Run();
