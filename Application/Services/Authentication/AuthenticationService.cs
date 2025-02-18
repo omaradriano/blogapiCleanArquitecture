@@ -2,9 +2,9 @@ using Application.Common.Interfaces.Authentication;
 
 namespace Application.Services.Authentication;
 
-public class AuthenticationService(IJwtTokenGenerator jwtTokenGenerator) : IAuthenticationService {
+public class AuthenticationService(IJwtTokenHandler jwtTokenGenerator) : IAuthenticationService {
 
-    private readonly IJwtTokenGenerator _jwtTokenGenerator = jwtTokenGenerator;
+    private readonly IJwtTokenHandler _jwtTokenGenerator = jwtTokenGenerator;
 
     public AuthenticationResult Login(string email, string password) {
         return new AuthenticationResult(Guid.NewGuid(), "username", email, "token xd");

@@ -1,7 +1,8 @@
 namespace Application.Common.Interfaces.Authentication;
 
-public interface IJwtTokenGenerator
+public interface IJwtTokenHandler
 {
     string GenerateToken(string email);
+    void ValidateToken(string token);
 }
 

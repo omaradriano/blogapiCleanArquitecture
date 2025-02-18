@@ -1,6 +1,7 @@
 using Application.Services.Authentication;
 using blog.Contracts.Authentication;
 using Contracts.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
@@ -31,6 +32,7 @@ public class AuthenticationController(IAuthenticationService authenticationServi
         return Ok(response);
     }
 
+    [Authorize]
     [HttpGet("test")]
     public IActionResult TestRoute(){
         var newData = new AuthenticationResponse("test", "test", "test", Guid.NewGuid());

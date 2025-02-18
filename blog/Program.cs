@@ -9,11 +9,18 @@ var builder = WebApplication.CreateBuilder(args);
 {
     builder.Services.AddControllers();
 
+    var configValues = builder.Configuration.GetSection("JwtSettings");
+
     //Dependency injection for infrastructure 
-    builder.Services.AddInfrastructure();
+    builder.Services.AddInfrastructure(builder.Configuration);
     //Dependency injection for application
     builder.Services.AddApplication();
 
+    if(configValues["Secret"] == null){
+        throw new Exception("Secret is null");
+    }
+
+    // System.Console.WriteLine(configValues["Secret"]);
     //jwt authentication
     builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme) //Receive JWt token in the header
         .AddJwtBearer(options => {
@@ -23,10 +30,10 @@ var builder = WebApplication.CreateBuilder(args);
                 ValidateAudience = true, //Acepta tokens dirigidos al cliente
                 ValidateLifetime = true, //Rechaza tokens expirados
                 ValidateIssuerSigningKey = true, //Rechaza tokens con firma invalida
-                ValidIssuer = "http://localhost:5103",
-                ValidAudience = "http://localhost:5103",
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("iliketurtles01.")),
-                
+                ClockSkew = TimeSpan.Zero, //Asegura que el token no es valido antes de su fecha de emision (tiempo exacto)
+                ValidIssuer = configValues["Issuer"],
+                ValidAudience = configValues["Audience"],
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configValues["Secret"] ?? string.Empty)),    
             };
         });
     builder.Services.AddAuthorization();
@@ -34,9 +41,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 var app = builder.Build();
 {
-    app.UseAuthorization();
-    app.UseAuthentication();
     app.UseHttpsRedirection();
+    app.UseAuthentication();
+    app.UseAuthorization();
     app.MapControllers();
     app.Run();
 }

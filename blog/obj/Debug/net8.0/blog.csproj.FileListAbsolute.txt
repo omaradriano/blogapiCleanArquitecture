@@ -49,3 +49,9 @@
 /Users/omaradriano/Dev/csharp/roadmapsh/blogapi/blog/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
 /Users/omaradriano/Dev/csharp/roadmapsh/blogapi/blog/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
 /Users/omaradriano/Dev/csharp/roadmapsh/blogapi/blog/obj/Debug/net8.0/blog.sourcelink.json
+/Users/omaradriano/Dev/csharp/roadmapsh/blogapi/blog/bin/Debug/net8.0/Microsoft.Extensions.Configuration.dll
+/Users/omaradriano/Dev/csharp/roadmapsh/blogapi/blog/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/omaradriano/Dev/csharp/roadmapsh/blogapi/blog/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Binder.dll
+/Users/omaradriano/Dev/csharp/roadmapsh/blogapi/blog/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+/Users/omaradriano/Dev/csharp/roadmapsh/blogapi/blog/bin/Debug/net8.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll
+/Users/omaradriano/Dev/csharp/roadmapsh/blogapi/blog/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll

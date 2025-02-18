@@ -1,14 +1,14 @@
 @blog_HostAddress = http://localhost:5103
 
-POST {{blog_HostAddress}}/auth/login
-Content-Type: application/json
+# POST {{blog_HostAddress}}/auth/login
+# Content-Type: application/json
 
-{
-    "email": "oadrian38@gmail.com",
-    "password": "123456"
-}
+# {
+#     "email": "oadrian38@gmail.com",
+#     "password": "123456"
+# }
 
-
+#another
 POST {{blog_HostAddress}}/auth/register
 Content-Type: application/json
 
